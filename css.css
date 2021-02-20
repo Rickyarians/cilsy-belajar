@@ -1,0 +1,45 @@
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+
+li:first-child {
+    font-size: 40px;
+}
+
+li:last-child {
+    font-size: 30px;
+}
+
+
+.parent-content {
+    
+}
+.konten {
+    display: inline-block;
+    background-color: tomato;
+}
+
+.konten:first-child {
+    background-color: aquamarine;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.konten:last-child {
+    background-color: violet;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.konten:nth-child(3) {
+    background-color: blue;
+}
