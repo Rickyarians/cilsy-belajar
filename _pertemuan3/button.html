@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn {
+            padding: 10 20 10 20;
+            background-color: red;
+            border-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: red;
+        }
+
+        div > div {
+            background-color: seagreen;
+            display: inline-block;
+            padding: 10px 20px 10px 20px;
+            width: 20%;
+            text-align: center;
+            border: 1px solid seagreen;
+        }
+
+        div > div:first-child {
+            text-align: left;
+            background-color: white;
+            color: seagreen;
+            border: 1px solid seagreen;
+        }
+
+        div > div:last-child {
+            text-align: right;
+            background-color: white;
+            color: seagreen;
+            border: 1px solid seagreen;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">
+        Submit
+    </button>
+
+    <div style="margin-top: 10px;">
+        <div>
+            Kotak 1
+        </div>
+        <div>
+            Kotak 2
+        </div>
+        <div>
+            Kotak 3
+        </div>
+    </div>
+</body>
+</html>

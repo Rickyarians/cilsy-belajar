@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block selector</title>
+
+    <style>
+        div > p {
+            font-size: 40px
+        }
+
+        div > p:hover {
+            color: red;
+        }
+
+         div > img {
+             border: 10px solid black;
+         }
+
+         div > div > p:first-child{
+            font-size: 20px
+        }
+
+
+    </style>
+</head>
+<body>
+
+  
+    <div>
+        <img 
+        height="50"
+        src="https://avatars.githubusercontent.com/u/33547206?s=460&u=4946d15139f156da01f23ff8bbab46fe456e1142&v=4" alt="">
+        <p>
+            Ini nobita
+        </p>
+    </div> 
+ 
+    <div>
+        <img 
+        height="50"
+        src="https://avatars.githubusercontent.com/u/33547206?s=460&u=4946d15139f156da01f23ff8bbab46fe456e1142&v=4" alt="">
+        <div>
+            <p>
+                Ini nobita
+            </p>
+            <p>
+                Ini nobita
+            </p>
+            <p>
+                Ini nobita
+            </p>
+        </div>
+    </div> 
+</body>
+</html>
