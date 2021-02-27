@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fungsiSaya()">jalanin dong</button>
+</body>
+<script>
+    function fungsiSaya() {
+        let angkapertama = 193243;
+        let angkakedua = "1789";
+        
+        // 1789
+        let angkaketiga = parseInt(angkakedua);
+        // "1"
+        console.log(typeof angkapertama.toString()) 
+        // console.log(typeof angkakeempat)
+        console.log(angkaketiga + angkapertama.toString());
+
+        let text = angkapertama.toString()
+        console.log(text)
+        console.log(text[2]);
+        console.log(text.length)
+        console.log(angkaketiga.length)
+
+        let nilai = null
+
+        console.log("---- Cek Variabel Nilai ---")
+        if(!nilai) {
+            console.log('true')
+        } else {
+            console.log('false')
+        }
+
+        let a = 1010;
+        let b = "";
+        console.log("---- Cek antar variabel ---")
+        
+        if(a != b){
+            console.log('true')
+        } else {
+            console.log('false')
+        }
+
+        let arrayObject = [
+            // 0
+            {
+                firstName : "ricky",
+                lastName : "ariansyah"
+            },
+            // 1
+            {
+                firstName : "rofi",
+                lastName : "nurhakim"
+            },
+            // 2
+            {
+                firstName : "husnul",
+                lastName : "chuluk"
+            }
+        ]
+
+        arrayObject.map((item, index) => {
+            console.log(item.firstName)
+            console.log(index)
+        })
+
+        for (let index = 0; index < arrayObject.length; index++) {
+                console.log(arrayObject[index].firstName)
+        }
+    }
+</script>
+</html>

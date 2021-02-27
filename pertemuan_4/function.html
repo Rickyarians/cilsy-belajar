@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="hasil">
+        
+    </div>
+    <button onclick="myFunction(3,4)">
+        hasilnya
+    </button>
+</body>
+
+<script>
+    let hasil = 0;
+
+    // klik
+    function myFunction(a, b){
+        // jalanin fungsi kali
+        kali(a,b)
+        // jalan terakhir
+        // 12
+        document.getElementById("hasil").innerHTML = hasil
+    }
+
+    function hitung(a, b){
+        return a + b;
+    }
+
+    // jalan dah tuh
+    function kali (a, b){
+        // operasi, abis itu diassign hasil kali a dan b ke variabel hasil 
+        hasil = a * b;
+    }
+</script>
+</html>

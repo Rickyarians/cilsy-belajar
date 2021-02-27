@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="NilaiHasil"></span>
+    
+    <script>
+        function nilaisiswa () {
+            // let nilai1 = 10085
+            // let nilai2 = 7084
+
+            let nilaiSaya = 29
+
+            if (nilaiSaya >= 85 && nilaiSaya <= 100) {
+                // nilaiSaya 85 - 100
+                return "A"
+            } else if (nilaiSaya >= 70 && nilaiSaya <= 84) {
+                // nilai 70 - 84
+                return "B"
+            } else if(nilaiSaya >= 60 && nilaiSaya <= 69){
+                // nilai 60 - 69
+                return "C"
+            }  else if(nilaiSaya >= 40 && nilaiSaya <= 59){
+                // nilai 40 - 59
+                return "D"
+            } else if(nilaiSaya >= 30 && nilaiSaya <= 39){
+                // nilai 30 - 39
+                return "E"
+            } else if(nilaiSaya <= 29){
+                // nilai 30 - 39
+                return "F"
+            }
+            else {
+                return "Index tidak dikenali"
+            }
+        }
+        document.getElementById('NilaiHasil').innerHTML = nilaisiswa()
+    </script>
+</body>
+</html>

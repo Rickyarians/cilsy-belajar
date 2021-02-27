@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kotak {
+            border: 1px solid black;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <span id="array"></span>
+</body>
+
+<script>
+
+    function cetakArray(){
+
+        let mobil = ["Toyota", "Honda", "Mitsubishi", "Isuzu"]
+
+        mobil.splice(1, 0, "Tesla")
+        let htmlMobil = ""
+
+        mobil.map((item, index) => {
+            htmlMobil += `<div class="kotak"> ${item} </div>`
+        })
+        console.log(htmlMobil)
+        return htmlMobil
+    }
+
+    document.getElementById("array").innerHTML = cetakArray()
+</script>
+</html>

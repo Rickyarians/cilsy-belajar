@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="hasil"></span>    
+</body>
+
+<script>
+
+   function operatorLogikaAND() {
+        let rokok = false;
+        let minuman = false;
+
+        // rokok ada && minuman ada = true // ini bener jalan hasil
+        // rokok ada && minuman tidak ada = false // ini bener
+        // rokok tidak ada && minuman ada = false // ini bener
+        // rokok tidak ada && minuman tidak ada = false // ini bener
+
+        if(rokok && minuman) {
+            return "mas rofi bisa disuruh / 2 barang ada"
+        } else {
+            return "salah satu barang nggak ada atau / 2 2 nya"
+        }
+   }
+
+   function operatorLogikaOR() {
+        let rokok = true;
+        let minuman = false;
+        let martabak = false;
+        let makanan = false;
+
+        // rokok ada || minuman ada = true
+        // rokok ada || minuman tidak ada = true
+        // rokok tidak ada || minuman ada = true
+        // rokok tidak || minuman tidak ada = false
+
+            
+        if((!rokok || minuman) || (!martabak || makanan)) {
+            return `${(rokok || minuman)} ${(martabak || makanan)} - ini benar`
+        } else {
+            return `${(rokok || minuman)} ${(martabak || makanan)} - ini salah`
+        }
+
+        // if(rokok || minuman || martabak || makanan)
+       
+   }
+
+   function operatorLogikaNegasi() {
+
+        let rokok = true
+        let tinggibadan = 160
+
+        
+
+        if(tinggibadan >= 170 && tinggibadan <= 180) {
+            return "tinggi cukup"
+        } else if (tinggibadan > 180) {
+            return "ketinggian"
+        }
+        else {
+            return "kurang tinggi"
+        }
+   }
+
+  
+
+    document.getElementById("hasil").innerHTML = operatorLogikaNegasi()
+
+</script>
+</html>

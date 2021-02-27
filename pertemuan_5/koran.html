@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            height: 200px;
+            width: 50%;
+            border: 0.5px solid black;
+            background-color: #F7F7F7;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            margin: auto;
+           
+        }
+
+        .container-parent {
+            width: 100%;
+           
+        }
+
+        .container-header {
+            background-color: #5D8AC2;
+            color: white;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        .the {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight:normal;
+        }
+        .extra {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .container-1 {
+            display: flex;
+        }
+
+        .p-kiri {
+            float: left;
+            font-size: 6px;
+            flex-grow: 1;
+        }
+
+        .p-kanan {
+            float: right;
+            font-size: 6px;
+            flex-grow: 1;
+            text-align: right;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-parent">
+        <div class="container">
+              <div class="container-header">
+                    <h4 class="the">
+                        The
+                    </h4>
+                    <h2 class="extra">
+                        Extra News
+                    </h2>
+              </div>
+            <!-- 1 -->
+            <div class="container-1">
+                <p class="p-kiri">
+                    ALL ABOUT THE BIG WORLD WE LIVE IN
+                </p>
+                <p class="p-kanan">
+                    EXCLUSIVE NEWS TODAY
+                </p>
+            </div>
+        </div>
+        <!-- 2 -->
+    </div>
+</body>
+</html>

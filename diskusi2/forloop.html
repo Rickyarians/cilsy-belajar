@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="mobilSaya"></span>
+</body>
+
+<script>
+    
+    function cetakMobilSaya() {
+        let mobilSaya = ["Honda", "Hyundai", "Hino", "Toyota", "Daihatsu",
+        "Nissa", "Ford", "BMW", "Mercedes"]
+
+        let htmlMobilSaya = ""
+
+        // htmlMobilSaya += mobilSaya[0] + "<br>"
+        // htmlMobilSaya += mobilSaya[1] + "<br>"
+        
+                
+        for (let index = 0; index < mobilSaya.length; index++) {
+           
+            if(index % 2 == 0) {
+                htmlMobilSaya += mobilSaya[index] + "<br>"
+            }
+        }
+
+       return htmlMobilSaya
+       
+    }
+
+    document.getElementById("mobilSaya").innerHTML = cetakMobilSaya()
+</script>
+</html>

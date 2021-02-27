@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Username</p>
+    <input type="text" id="username" oninput="validation()"> -->
+    <span id="errorMessage">
+        <div>
+            <br>
+            name
+             <br>
+             harga
+        </div>
+        <div>
+            <br>
+            name
+             <br>
+             harga
+        </div>
+        <div>
+            <br>
+            name
+             <br>
+             harga
+        </div>
+    </span>
+
+    <button onclick="cobaSlice()">
+        Slice
+    </button>
+</body>
+
+<script>
+    // function validation() {
+    //     // tangkap value
+    //     let userNameTemp = document.getElementById("username").value
+
+        
+        
+    //         // tampilkan pesan error message "karakter harus lebih dari 5"
+    //     // jika > 5
+    //         // tampilkan pesan "karakter sudah sama lebih dari 5 / sesuai"
+
+    //     // hitung panjang string
+    //     let panjangUsername = userNameTemp.length;
+    //     console.log(panjangUsername)
+
+    //     if(panjangUsername < 5) {
+    //         // jika panjang username < 5
+    //         document.getElementById("errorMessage").innerHTML = "karakter harus lebih dari 5"
+    //     } else {
+    //         document.getElementById("errorMessage").innerHTML = "karakter sudah sama lebih dari 5 / sesuai"
+    //     }
+
+       
+    // }
+
+    function cobaSlice() {
+        var str = "Apple, Banana, Kiwi"
+
+       
+
+        console.log(str)
+
+        // var res = noOrder.slice(2, 9);
+
+        // console.log(res)
+
+        let stringReplace = "ganti sakses"
+        let tempfinal = stringReplace.replace("sakses", "success")
+        console.log(tempfinal)
+
+        let firstName = "Rofi"
+        let lastName = "Nurhakim"
+
+        console.log(firstName.concat(" ", lastName))
+        console.log(firstName + " " + lastName)
+        console.log(`${firstName} ${lastName}`)
+
+        username = "ricky"
+        let finalHasilTrim = username.trim();
+        if(finalHasilTrim == "ricky"){
+            console.log('true')
+        } else {
+            console.log('false')
+        }
+
+        // string = "ini adalah string" 
+        // string[0]
+        // array = ["Rofi", "Nurhakim"]
+        // array[1]
+        // fasiltas = ["bathroom", "kursi", "meja", "lemari"]
+
+        var noOrder = "1-26022021-WW"
+        // let fullName = "Rickyoman Wijaya"
+        // console.log(fullName)
+        let fullNameArray = noOrder.split("-")
+        console.log(fullNameArray)
+        console.log(fullNameArray[1])
+
+        let totalHarga = 5000
+        
+        // cek ribuan
+        // cek apakah panjang ribuan, panjangn digit == 4
+        // ambil digit pertama + string "Ribu"
+        // cetak 1 Ribu
+
+        let stringTotalHarga = totalHarga.toString();
+        // "5000"
+        console.log(stringTotalHarga)
+        console.log(typeof stringTotalHarga)
+
+        if(stringTotalHarga.length == 4) {
+            console.log(`${stringTotalHarga[0]} Ribu`)
+        } else {
+            console.log("Bukan Ribuan")
+        }
+
+        
+
+
+    }
+
+    function tampilinProduk() {
+
+        let produk = "";
+        let produkTokopedia = [
+            {
+                name: "Sapu",
+                harga: 10000,
+            },
+
+            {
+                name: "Pisau",
+                harga: 10000,
+            },
+            {
+                name: "Mangkok",
+                harga: 10000,
+            }
+        ]
+
+        produkTokopedia.map((item, index) => {
+            produk += "<div><br>" + item.name + "<br>" + item.harga + "</div>"
+        })
+        
+        return produk
+        
+    }
+
+    document.getElementById("errorMessage").innerHTML = tampilinProduk()
+</script>
+</html>

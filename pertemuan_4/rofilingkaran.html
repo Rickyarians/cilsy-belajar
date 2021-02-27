@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Luas lingkaran</h1>
+    <p>Masukan nilai jari</p>
+    <input type="text" id="j">
+    <p>Masukan nilai jari2</p>
+    <input type="text" id="j2">
+    <p>Masukan rumus konstanta phi</p>
+    <input type="text" id="konstanta" >
+
+    <button onclick="hasil()">
+        hitung
+    </button>
+
+    <p>luas lingkaran adalah</p>
+    <span id="hasil"></span>
+    <br> -->
+    
+
+    <!-- <p>Hujan Nggak?</p>
+    <input type="text" id="hujan" >
+
+    <p>ada jas hujan nggak?</p>
+    <input type="text" id="jashujan" > -->
+
+    <button onclick="mauGantiKelamin()">
+        ganti Kelamin
+    </button>
+
+ 
+    <script type="text/javascript">
+    function hasil  () {
+        var j = document.getElementById('j').value
+        var j2 = document.getElementById('j2').value;
+        var konstanta = document.getElementById('konstanta').value;
+
+        // hitung
+        var hasil = j * j2 * konstanta ;
+        document.getElementById('hasil').innerHTML = hasil ;
+    }
+
+    
+
+    // jika hujan mas rofi nggak berangkat ke kampus
+    // tapi kalo ada jas hujan rofi berangkat
+    // kalo nggak hujan mas rofi berangkat
+
+    function berangkatNggak() {
+        var hujan = document.getElementById('hujan').value
+        var jashujan = document.getElementById('jashujan').value
+        
+        
+        if(hujan == 'ya' && jashujan == 'ada'){
+            alert("rofi berangkat")
+        } else if (hujan == 'ya' && jashujan == 'kosong'){
+            // option 2
+            alert("rofi nggak berangkat")
+        } else {
+            alert("rofi berangkat")
+        }
+    }
+        
+    // 1 = pria
+    // 2 = wanita
+    let manusia = {
+        nama: "ricky",
+        kulit: "hitam",
+        rambut: "ikal",
+        kelamin: 2
+    }
+
+    
+    // methods
+    function mauGantiKelamin() {
+        console.log(manusia.kelamin)
+        let pergidokter = "ya";
+        let benerenggak = true;
+        let angka = 1
+
+        console.log(manusia)
+        
+        delete manusia.nama
+    
+        console.log(manusia)
+        
+        // false
+        // pergidokter = null 
+        // false
+        // pergidokter = ""
+
+        if(pergidokter == 'ya') {
+              
+              // jika ricky ke dokter ganti kelamin
+               
+               if(manusia.kelamin == 1){
+                   // jika pria maka ubah ke wanita
+                   manusia.kelamin = 2
+                   
+                   alert(manusia.kelamin + " Wanita")
+               } else if(manusia.kelamin == 2) {
+                   // jika wanita maka ubah pria
+                    manusia.kelamin = 1
+                   alert(manusia.kelamin + " Pria")
+               } else {
+                   // jika bukan pria / wanita jalankan di bawah ini
+                   alert("tidak ketahui kelaminnya")
+               }
+               
+        } else {
+             // jika tidak ke dokter
+                alert("nggak pergi dokter")
+        }
+       
+       
+
+    }
+
+
+
+    </script>
+
+    
+
+
+    
+    
+</body>
+</html>
