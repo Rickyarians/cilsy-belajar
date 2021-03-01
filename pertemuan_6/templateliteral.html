@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Declaring a Variable Using const</h2>
+<p id="demo"></p>
+<script>
+    let data = [
+        {
+            firstName: "Ricky",
+            lastName: "Ariansyah",
+            gender: "P"
+        },
+        {
+            firstName: "Rofi",
+            lastName: "nurhakim",
+            gender: "P"
+        },
+        {
+            firstName: "husnul",
+            lastName: "husnul",
+            gender: "P"
+        },
+        {
+            firstName: "Ricky",
+            lastName: "wijaya",
+            gender: "P"
+        }
+    ]
+
+    let htmlTemplate = ""
+
+    function tampilinData()  {
+
+        for (let index = 0; index < data.length; index++) {
+            // htmlTemplate += "<div>" + "Nama Lengkap : " + data[index].firstName + " " + data[index].lastName + "<br></div>"
+            htmlTemplate += `<div> Nama Lengkap : ${data[index].firstName} ${data[index].lastName} <br></div>`
+        }
+        
+        return htmlTemplate
+    }
+
+    document.getElementById("demo").innerHTML = tampilinData()
+</script>
+</body>
+</html>

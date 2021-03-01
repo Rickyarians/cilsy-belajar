@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForLoop</title>
+</head>
+<body>
+    
+    <h1>FOR LOOPING </h1>
+    <span id="situs"></span>
+    <script>
+         function situs(){
+         let situs = ["Apple", "Microsoft", "Google", "Facebook", "Spotify", "Amazon", "Netflix", "Slack", "Instagram"] ;
+        // let i = ""
+        let htmlTemplate = ""
+        for (let i = 0; i < situs.length; i++){
+            htmlTemplate += `<div> ${situs[i]} </div>`
+        }
+
+        return htmlTemplate
+    }
+        document.getElementById('situs').innerHTML = situs()
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan FOR</title>
+</head>
+<body>
+    <span id="SosialMedia"></span>
+</body>
+<script>
+    function MediaSosial () {
+        let SosialMedia = ["Apple", "Microsoft", "Google", "facebook", "Spotify", "Amazon", "Netflix", "Slack"]
+        
+        let htmlsosialMedia=""
+        let i = 2;
+
+        while (SosialMedia[i]) {
+            htmlsosialMedia += SosialMedia[i] + "<br>" ;
+            i++;
+        }
+
+        return htmlsosialMedia
+    }
+    document.getElementById("SosialMedia").innerHTML = MediaSosial()
+
+</script>
+
+</html>
