@@ -1,0 +1,67 @@
+let user = [
+  {
+    userId: 1,
+    id": 1,
+    title": "delectus aut autem",
+    completed": false
+  },
+  {
+    userId: 1,
+    id: 2,
+    title: "quis ut nam facilis et officia qui",
+    completed: false
+  },
+ {
+    userId: 1,
+    id: 3,
+    title: "quis ut nam facilis et officia qui",
+    completed: true
+  },
+  {
+    userId: 1,
+    id: 2,
+    title: "quis ut nam facilis et officia qui",
+    completed: false
+  },
+  
+ ]
+ 
+ cetak data ini title dan statusnya
+ kalo statusnya true tulisannya hijau
+ kalo statusnya false tulisannya merah
+ cetak yang id nya genap aja
+ 
+ bikin form input ambil value title sama completed
+ buat tombol button onclick jalanin function
+ dimana function itu nanti akan nambahin data kita yang tangkep valuenya ke array
+ 
+
+
+caranya
+ 
+// looping array
+// templateHTML, templateStatus
+// buat class success dan failed
+// if status true templateStatus manggil class apa `<span class="success">success</span>` 
+// if genap isi templateHTML
+// templateHTML += `${item.title} ${templateStatus}`
+// else 
+// templateHTML += ""
+
+
+
+// buat 2 input bisa :
+  - 1 input text 1 radio 
+  /
+  - 2 input text
+// tankap nilainya
+// buat struct datanya 
+    let datatambahan = {
+      userId: 2,
+      id: 26,
+      title: value nya dari input 
+      completed: valuenya dari input
+    }
+//  tambahin ke array
+// return datanya html
+
