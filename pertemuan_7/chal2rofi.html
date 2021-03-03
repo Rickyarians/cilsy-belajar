@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalange2</title>
+
+    <style>
+        .success {
+            color: green;
+        }
+
+        .failed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <span id ="hasil"></span>
+</body>
+<script>
+    function dataList() {
+        let isiData = 
+            // array
+            [   
+                // object - array index 0
+                {
+                    userId: 1,
+                    id: 1,
+                    title: "delectus aut autem",
+                    completed: false
+                },
+                 // object - array index 1
+                {
+                     // property/key : value
+                    userId: 1,
+                    id: 2,
+                    title: "quis ut nam facilis et officia qui 1",
+                    completed: false
+                },
+                 // object - array index 2
+                {
+                     // property/key : value
+                    userId: 1,
+                    id: 3,
+                    title: "quis ut nam facilis et officia qui 2",
+                    completed: true
+                },
+                 // object - array index 3
+                {
+                     // property/key : value
+                    userId: 1,
+                    id: 2,
+                    title: "quis ut nam facilis et officia qui 3",
+                    completed: false
+                },
+                
+        ]
+
+        let templateHTML = ""
+
+        let templateStatus = ""
+
+        for(let i = 0; i < 4; i++){
+            // templateHTML += isiData[i].title + "cara 1 <br>"
+                
+            if(isiData[i].completed == true) {
+                // jalan ketika completed nilainya true
+                templateStatus = `<span class="success">Selesai</span>`
+            } else {
+                // selain true
+                templateStatus = `<span class="failed">Belum Selesai</span>`
+            }
+
+            if((isiData[i].id % 2) == 0) {
+                // jalan ketika completed nilainya true
+                templateHTML += `${isiData[i].title}<br> ${templateStatus}<br><br> `
+            } else {
+                // selain true
+               
+            }
+
+
+
+            
+        }
+
+        //jalan code disini
+        return templateHTML
+    }
+        
+       
+    document.getElementById("hasil").innerHTML = dataList()
+  
+    // Ini branch tambahcode
+
+    
+
+</script>
+</html>
