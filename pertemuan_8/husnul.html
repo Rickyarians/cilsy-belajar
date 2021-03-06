@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+          .succes {
+            color: green;
+          }
+          .failed {
+            color: red;
+          }
+        </style>
+
+        <form id="status">
+          Masukan : <input type="text" id="title">    
+          <p>Completed or not:</p>
+          <input type="radio" id="completed" name="completed" value="true">
+          <label for="female">true</label><br>
+          <input type="radio" id="completed" name="completed" value="false">
+          <label for="male">false</label><br>
+        </form>
+        <button onclick="addDataToArray()">Tambah</button><br><br>
+        <span id="hasil"></span>
+        <script>
+
+        let user = [
+                {
+              userId: 1,
+              id: 1,
+              title: 'delectus aut autem',
+              completed: false
+            },
+            {
+              userId: 1,
+              id: 2,
+              title: "quis ut nam facilis et officia qui",
+              completed: false
+            },
+          {
+              userId: 1,
+              id: 3,
+              title: "quis ut nam facilis et officia qui",
+              completed: true
+            },
+            {
+              userId: 1,
+              id: 2,
+              title: "quis ut nam facilis et officia qui",
+              completed: false
+            },
+                ]
+            // 
+                function addDataToArray() {
+                    console.log(user)
+                    let username = document.getElementById('title').value
+                    let password = document.getElementById('completed').value
+
+                    if(completed == 'true') {
+                        completed = true
+                    } else {
+                        completed = false
+                    }
+                    
+
+                    url,
+                    datayang dibawa // payload
+
+
+                    let data = {
+                       username : username,
+                       password: password
+                    }
+
+                    www.cilsy.com/login, data
+
+                    // kalo bener
+
+                    // respon balikan
+                    console.log(response)
+                    {
+                        code : 200,
+                        status: "success",
+                        data: {
+                            userData : {
+                                name: "ricky ariansyah",
+                                jabatan: "fullstack engineer"
+                            },
+                            token: "dskjdksjdnk3n434n1kn321kdsajdksadskjads8329jjfdsfjdbffdkfnnfdklnfkdnfklndklfasdahjknsdan"
+                        }
+                    }
+
+                    let userData = response.data.userdate
+                    let token = response.data.token
+                    redirect to main page
+
+                    // kalo salah
+                    // respon balikan
+                    console.log(response)
+                        {
+                            code : 200,
+                            status: "success",
+                            data: {
+                                userData : {
+                                    name: "ricky ariansyah",
+                                    jabatan: "fullstack engineer"
+                                },
+                                token: "dskjdksjdnk3n434n1kn321kdsajdksadskjads8329jjfdsfjdbffdkfnnfdklnfkdnfklndklfasdahjknsdan"
+                            }
+                        }
+
+
+                    user.push(data)
+
+                    console.log(user)
+
+                    console.log(data)
+
+                   
+                    document.getElementById('hasil').innerHTML = DataList() 
+                }
+            // 
+           
+           function DataList () 
+            {
+             
+            
+          let templateHTML = ""
+          let templateStatus = "" 
+
+              for (let index = 0; index < user.length; index++) 
+              {
+                if(user[index].completed == true) {
+                  templateStatus = `<span class="succes">Selesai</span>`
+                }
+                else {
+                  templateStatus = `<span class="failed">Belum Selesai</span>`
+                }
+                
+                if((user[index].id % 2) == 0) {
+                  templateHTML += `${user[index].title}<br> ${templateStatus}<br><br>`
+                }
+                else {
+
+                }
+                
+              }  
+             
+              return templateHTML
+            }
+        
+            document.getElementById('hasil').innerHTML = DataList() 
+
+ </script>
+</body>
+</html>
